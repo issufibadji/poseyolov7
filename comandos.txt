@@ -1,0 +1,12 @@
+
+
+pip install -r requirements.txt  
+
+
+python3 detect.py --weights yolov7-w6-pose.pt --kpt-label --hide-labels --hide-conf --source ac2.mp4 --line-thickness 2 --nosave --view-img
+
+python3 detect.py --weights yolov7-e6e.pt --device cpu --conf 0.60 --img-size 640 --source ./image1.jpg
+
+python3 test_pose.py   
+
+python3 test_pose_video.py 
